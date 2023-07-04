@@ -1,5 +1,5 @@
 {
-    "name": "Horizont test task",
+    "name": "Horizont-test-task",
     "version": "1.0.0",
     "description": "MODSEN test task",
     "main": "./src/index.tsx",

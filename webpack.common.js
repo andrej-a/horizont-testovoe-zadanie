@@ -21,9 +21,6 @@ module.exports = {
             title: 'Horizont test task',
             template: './public/index.html',
         }),
-        new CopyWebpackPlugin({
-            patterns: [],
-        }),
     ],
     module: {
         rules: [
