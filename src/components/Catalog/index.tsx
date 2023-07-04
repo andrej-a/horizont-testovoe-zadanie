@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { CatalogComponent } from './styles';
 import { content } from '@/config';
-import CatalogItem from '../Item';
+import CatalogItem from '../UI/Item';
 
 const Catalog = () => {
     const [catalog, setCatalog] = useState(content);
-
     return (
         <CatalogComponent>
             {catalog.map(item => {

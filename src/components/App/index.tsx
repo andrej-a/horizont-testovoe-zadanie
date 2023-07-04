@@ -1,6 +1,6 @@
 import React from 'react';
 import Wrapper from '../Wrapper';
-import Header from '../Header';
+import Header from '../UI/Header';
 import Catalog from '../Catalog';
 
 const App = () => {

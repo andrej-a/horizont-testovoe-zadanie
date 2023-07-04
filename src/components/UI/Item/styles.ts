@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ItemComponent = styled.div`
-    width: 20%;
+    width: 25%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -19,14 +19,4 @@ export const ItemComponent = styled.div`
 export const ItemTitle = styled.p`
     font-size: 20px;
     padding: 5px;
-`;
-
-export const ImageWrapper = styled.div`
-    width: 95%;
-    height: 350px;
-`;
-
-export const Image = styled.img`
-    width: 100%;
-    height: 100%;
 `;
