@@ -1,6 +1,8 @@
 import React from 'react';
-import { HeaderComponent, HeaderTitle } from './styles';
+
 import { constants } from '@/types/constants';
+
+import { HeaderComponent, HeaderTitle } from './styles';
 
 const { HEADER } = constants;
 

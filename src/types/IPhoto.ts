@@ -3,7 +3,7 @@ interface IComment {
     content: string;
 }
 
-export interface IPhoto {
+export interface IProduct {
     id: string;
     title: string;
     description: string;

@@ -1,7 +1,8 @@
-import { IPhoto } from '@/types/IPhoto';
 import { v4 as uuidv4 } from 'uuid';
 
-export const content: IPhoto[] = [
+import { IProduct } from '@/types/IPhoto';
+
+export const content: IProduct[] = [
     {
         id: uuidv4(),
         title: '6604-2',

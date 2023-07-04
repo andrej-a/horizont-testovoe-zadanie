@@ -69,8 +69,12 @@ export const AddCommentButton = styled.button`
     border-radius: 5px;
     cursor: pointer;
 
-    &:hover {
+    &:hover:not(:disabled) {
         border: 1px solid black;
         color: red;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
     }
 `;

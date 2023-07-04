@@ -10,4 +10,5 @@ export const CatalogComponent = styled.section`
     gap: 30px;
 
     margin-top: 50px;
+    padding: 30px;
 `;
