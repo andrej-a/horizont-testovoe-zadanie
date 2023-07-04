@@ -8,6 +8,7 @@ export enum constants {
     MISSING_FORM_FIELD_ERROR = 'Обязательное поле',
     COMMENTS_FORM_BUTTON = 'Добавить',
     COMMENTS_FORM_PLACEHOLDER = 'Введите комментарий',
+    ERROR_BOUNDARY_MESSAGE = 'Что-то случилось, перезагрузитесь',
 }
 
 export enum numberConstants {
