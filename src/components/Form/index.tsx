@@ -45,8 +45,8 @@ const Form = memo(
                 product => product.id === productID,
             );
             const currentProduct = catalog[updatedProductIndex];
-            const catalogCopy = [...catalog];
-            const updatedProduct = catalogCopy.splice(updatedProductIndex, 1, {
+            const copyCatalog = [...catalog];
+            copyCatalog.splice(updatedProductIndex, 1, {
                 ...currentProduct,
                 comments: [
                     ...currentProduct.comments,
@@ -54,7 +54,7 @@ const Form = memo(
                 ],
             });
 
-            onSetCatalog([...catalogCopy, ...updatedProduct]);
+            onSetCatalog([...copyCatalog]);
             onSetShowForm(false)();
         };
 

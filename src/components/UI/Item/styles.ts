@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+import size from '@/types/sizes';
+
+const { laptop, tablet } = size;
+
 export const ItemComponent = styled.div`
     width: 25%;
     height: auto;
@@ -13,6 +17,14 @@ export const ItemComponent = styled.div`
 
     &:hover {
         background-color: antiquewhite;
+    }
+
+    @media (max-width: ${laptop}px) {
+        width: 40%;
+    }
+
+    @media (max-width: ${tablet}px) {
+        width: 300px;
     }
 `;
 

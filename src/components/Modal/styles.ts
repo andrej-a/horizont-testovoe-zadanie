@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+import size from '@/types/sizes';
+
+const { mobileL } = size;
+
 export const Overlay = styled.div<{ showModal: boolean }>`
     position: fixed;
 
@@ -34,6 +38,8 @@ export const Overlay = styled.div<{ showModal: boolean }>`
 `;
 
 export const ModalWindow = styled.div`
+    position: relative;
+
     width: auto;
     height: auto;
     padding: 50px;
@@ -45,6 +51,11 @@ export const ModalWindow = styled.div`
 
     background-color: rgba(255, 255, 255, 1);
     cursor: auto;
+
+    @media (max-width: ${mobileL}px) {
+        width: 100vw;
+        height: 100vh;
+    }
 `;
 
 export const ModalContentWrapper = styled.div`
@@ -76,5 +87,26 @@ export const AddCommentButton = styled.button`
 
     &:disabled {
         cursor: not-allowed;
+    }
+`;
+
+export const CloseModalButton = styled.button`
+    position: absolute;
+    top: 5%;
+    left: 90%;
+
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-radius: 100%;
+
+    font-size: 20px;
+    color: red;
+
+    cursor: pointer;
+
+    @media (max-width: ${mobileL}px) {
+        top: 3%;
+        left: 85%;
     }
 `;

@@ -9,6 +9,7 @@ import Form from '../Form';
 import ImageComponent from '../UI/ImageComponent';
 import {
     AddCommentButton,
+    CloseModalButton,
     ModalContentWrapper,
     ModalWindow,
     Overlay,
@@ -84,6 +85,9 @@ const Modal = memo(
                             product={{ url, title, description, id, comments }}
                         />
                     )}
+                    <CloseModalButton onClick={onSetShowModal(false)}>
+                        X
+                    </CloseModalButton>
                 </ModalWindow>
             </Overlay>,
             document.body,
